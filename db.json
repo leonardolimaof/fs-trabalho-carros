@@ -14,6 +14,21 @@
       "id": "b517",
       "carro": "Onix",
       "ano": "2024"
+    },
+    {
+      "id": "7b43",
+      "carro": "chevet",
+      "ano": "1985"
+    },
+    {
+      "id": "c493",
+      "carro": "",
+      "ano": ""
+    },
+    {
+      "id": "36dd",
+      "carro": "classic",
+      "ano": "1994"
     }
   ]
 }

@@ -56,32 +56,4 @@ document.getElementById('enviar').addEventListener('click', function() {
             })
             .catch(error => console.error('Erro ao carregar o JSON:', error));
 
-document.getElementById('deletar').addEventListener('click', function() {
-    const deletar = document.getElementById('deletar').value
-    document.getElementById('deletar').value = "";
-    let data = {
-        deletar: deletar
-    }
-    fetch('http://localhost:3000/Veiculos/${id}', {
-                method: 'DELETE',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(data),
-            })
-            .then(response => response.json())
-            .then(data => {
-                console.log('Dados enviados com sucesso:', data);
-            })
-            .catch((error) => {
-                console.error('Erro ao enviar dados:', error);
-            });
-})
-
-document.addEventListener('keydown', function (event) {
-    if (event.key === 'Enter') {
-      enviar()
-    }
-  })
-
-  
+            
