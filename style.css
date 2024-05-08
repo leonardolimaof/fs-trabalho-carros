@@ -1,9 +1,23 @@
 body {
-  background-image: url(./img/fundo.jpg);
+  background-image: url(./img/11871766-design-de-fundo-de-conceito-de-natureza-verde-abstrato-borrado-e-banner-de-publicidade-de-site-de-papel-de-parede-de-publicidade-g.jpg);
+  background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
-  color: whitesmoke;
+  
 }
 
 #exampleModalLabel {
   color: black;
+}
+
+
+
+
+.navbar-nav li a:hover {
+    background-color: #007bff;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav li a:active {
+    background-color: #007bff;
 }
