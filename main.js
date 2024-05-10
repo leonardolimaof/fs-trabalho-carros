@@ -85,7 +85,20 @@ document.getElementById('enviar').addEventListener('click', function(event) {
                                                 <input type="text" class="form-control" id="modelo_${item.id}" name="modelo" value="${item.modelo}" placeholder="Modelo">
                                             </div>
                                             <div class="form-group">
-                                                <input type="color" class="form-control" id="cor_${item.id}" name="cor" value="${item.cor}" placeholder="cor">
+                                                <select class="form-control" id="cor_${item.id}" name="cor" value="${item.cor}">
+                                                    <option value="" disabled selected>Selecione a cor</option>
+                                                    <option value="Vermelho">Vermelho</option>
+                                                    <option value="Azul">Azul</option>
+                                                    <option value="Verde">Verde</option>
+                                                    <option value="Amarelo">Amarelo</option>
+                                                    <option value="Laranja">Laranja</option>
+                                                    <option value="Roxo">Roxo</option>
+                                                    <option value="Rosa">Rosa</option>
+                                                    <option value="Marrom">Marrom</option>
+                                                    <option value="Cinza">Cinza</option>
+                                                    <option value="Branco">Branco</option>
+                                                    <option value="Preto">Preto</option>
+                                                </select>
                                             </div>
                                             <div class="form-group">
                                                 <input type="number" class="form-control" id="ano_${item.id}" name="ano" value="${item.ano}" placeholder="Ano de fabricação">

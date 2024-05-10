@@ -1,46 +1,25 @@
 {
   "Veiculos": [
     {
-      "carro": "Chevrolet",
-      "modelo": "Cruze",
-      "cor": "#e01a1a",
-      "ano": "2024",
-      "id": "cb81"
-    },
-    {
-      "id": "6f87",
+      "id": "b284",
       "carro": "Volkswagen",
       "modelo": "Polo",
-      "cor": "#711961",
+      "cor": "Azul",
       "ano": "2024"
     },
     {
-      "id": "2a11",
-      "carro": "Toyota",
-      "modelo": "Yaris",
-      "cor": "#5ca711",
+      "id": "baf6",
+      "carro": "Chevrolet",
+      "modelo": "Onix",
+      "cor": "Vermelho",
       "ano": "2024"
     },
     {
-      "carro": "BMW",
-      "modelo": "X1",
-      "cor": "#2a2222",
-      "ano": "2019",
-      "id": "d66c"
-    },
-    {
-      "id": "44b2",
-      "carro": "Honda",
-      "modelo": "Civic",
-      "cor": "#d11a1a",
-      "ano": "2024"
-    },
-    {
-      "carro": "Ford",
-      "modelo": "Fiesta",
-      "cor": "#197646",
-      "ano": "2016",
-      "id": "3e05"
+      "id": "6c05",
+      "carro": "Fiat",
+      "modelo": "Argo",
+      "cor": "Amarelo",
+      "ano": "2020"
     }
   ]
 }
