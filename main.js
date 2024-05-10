@@ -79,7 +79,7 @@ document.getElementById('enviar').addEventListener('click', function(event) {
                                         <p>Veículo de ID: ${item.id}</p>
                                         <form>
                                             <div class="form-group">
-                                                <input type="text" class="form-control" id="carro_${item.id}" name="carro" value="${item.carro}" placeholder="Veículo">
+                                                <input type="text" class="form-control" id="carro_${item.id}" name="carro" value="${item.carro}" placeholder="Veículo" readonly>
                                             </div>
                                             <div class="form-group">
                                                 <input type="text" class="form-control" id="modelo_${item.id}" name="modelo" value="${item.modelo}" placeholder="Modelo">
