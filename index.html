@@ -34,8 +34,42 @@
                                     <div class="container text-center">
                                         <div class="row text-center justify-content-center m-3">
                                         <form action="/" method="post">
+                                            <section class="form-group">
+                                                <label for="carro"></label>
+                                                <select class="form-control" id="carro" name="carro">
+                                                    <option value="" disabled selected>Selecione a marca</option>
+                                                    <option value="Fiat">Fiat</option>
+                                                    <option value="Volkswagen">Volkswagen</option>
+                                                    <option value="Chevrolet">Chevrolet</option>
+                                                    <option value="Toyota">Toyota</option>
+                                                    <option value="Honda">Honda</option>
+                                                    <option value="Ford">Ford</option>
+                                                    <option value="Renault">Renault</option>
+                                                    <option value="Nissan">Nissan</option>
+                                                    <option value="BMW">BMW</option>
+                                                    <option value="Mercedes-Benz">Mercedes-Benz</option>
+                                                    <option value="Audi">Audi</option>
+                                                    <option value="Peugeot">Peugeot</option>
+                                                    <option value="Citroen">Citroen</option>
+                                                    <option value="Kia">Kia</option>
+                                                    <option value="Hyundai">Hyundai</option>
+                                                    <option value="Isuzu">Isuzu</option>
+                                                    <option value="Mitsubishi">Mitsubishi</option>
+                                                    <option value="Land Rover">Land Rover</option>
+                                                    <option value="Jaguar">Jaguar</option>
+                                                    <option value="Lamborghini">Lamborghini</option>
+                                                    <option value="McLaren">McLaren</option>
+                                                    <option value="Porsche">Porsche</option>
+                                                    <option value="Lexus">Lexus</option>
+                                                    <option value="Bugatti">Bugatti</option>
+                                                    <option value="Ferrari">Ferrari</option>
+                                                </select>
+                                            </section>
                                             <div class="form-group">
-                                                <input type="text" class="form-control" id="carro" name="carro" placeholder="Nome do carro">
+                                                <input type="text" class="form-control" id="modelo" name="modelo" placeholder="Modelo">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="color" class="form-control" id="cor" name="cor" placeholder="cor">
                                             </div>
                                             <div class="form-group">
                                                 <input type="number" class="form-control" id="ano" name="ano" placeholder="Ano de fabricação">
@@ -64,6 +98,8 @@
                     <tr>
                         <th>ID</th>
                         <th>Veiculo</th>
+                        <th>Modelo</th>
+                        <th>Cor</th>
                         <th>Ano</th>
                         <th>Ações</th>
                     </tr>
