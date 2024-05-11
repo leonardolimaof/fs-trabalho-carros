@@ -29,16 +29,19 @@ document.getElementById('enviar').addEventListener('click', function(event) {
     .then(data => {
         console.log('Dados enviados com sucesso:', data);
         Swal.fire({
-            title: "Salvo com sucesso!",
-            text: "Dê um ok!",
-            icon: "success"
-          });
+            position: "center",
+            icon: "success",
+            title: "Salvo com Sucesso!",
+            showConfirmButton: false,
+            timer: 1500
+          })
+          .then(() => {
+            location.reload();
+        });;
         
         // Fecha o modal após a inserção dos dados
         $('#modalEditar').modal('hide');
 
-        
-        window.location.reload();
     })
     .catch((error) => {
         console.error('Erro ao enviar dados:', error);
@@ -197,8 +200,15 @@ document.getElementById('enviar').addEventListener('click', function(event) {
                             return response.json();
                         })
                         .then(data => {
-                            console.log('Dados atualizados com sucesso:', data);
-                            location.reload();
+                            Swal.fire({
+                                position: "center",
+                                icon: "success",
+                                title: "Salvo com Sucesso!",
+                                showConfirmButton: false,
+                                timer: 1500
+                              }).then(() => {
+                                location.reload();
+                              })
                         })
                         .catch(error => console.error('Erro ao atualizar o JSON:', error));
                     }
