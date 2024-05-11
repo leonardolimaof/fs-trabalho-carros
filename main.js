@@ -18,6 +18,17 @@ document.getElementById('enviar').addEventListener('click', function(event) {
         ano: ano
     };
 
+    if (!data.carro || !data.modelo || !data.cor || !data.ano) {
+        Swal.fire({
+            position: "center",
+            icon: "error",
+            title: "Preencha todos os campos!",
+            showConfirmButton: false,
+            timer: 1500
+          })
+        return;
+    }
+
     fetch('http://localhost:3000/Veiculos', {
         method: 'POST',
         headers: {
